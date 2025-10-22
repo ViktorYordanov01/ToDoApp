@@ -82,6 +82,35 @@ body{
     padding-right: 4px;
 }
 
+.app-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 6px;
+    border-bottom: 1px solid #e5e5ea;
+    margin-top: 10px;
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0; transform: translate(8px);}
+    to{opacity: 1; transform: translate(0);}
+}
+
+.app-item:hover{
+    background-color: #f2f2f7;
+}
+
+.app-text{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
 .app-footer{
     display: flex;
     justify-content: center;
