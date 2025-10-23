@@ -85,7 +85,6 @@ body{
 .app-item{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 8px 6px;
     border-bottom: 1px solid #e5e5ea;
     margin-top: 10px;
@@ -104,6 +103,12 @@ body{
 .app-text{
     flex: 1;
     margin-left: 10px;
+}
+
+.app-actions{
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 .edit-btn:hover, .delete-btn:hover {
